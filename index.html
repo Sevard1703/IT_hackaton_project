@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Ты дебагер — ты и баг</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex items-center justify-center select-none">
+  <div id="app" class="text-center p-8 rounded-xl bg-gray-800/70 shadow-2xl max-w-xl w-full">
+    <h1 class="text-4xl font-black mb-4 glitch">Ты дебагер — ты и баг</h1>
+    <p class="mb-4">Найди все баги / Find all the bugs… if you dare.</p>
+
+    <div class="flex flex-wrap justify-center gap-4">
+      <button id="bugButton" class="btn-red">Нажми меня (ха‑ха)</button>
+      <button id="fixButton" class="btn-green">Починить всё</button>
+    </div>
+
+    <div id="errorPanel" class="mt-6 text-left bg-black/40 p-4 h-48 overflow-y-auto rounded-lg text-sm font-mono"></div>
+  </div>
+</body>
+</html>

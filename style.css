@@ -1,0 +1,20 @@
+@keyframes glitch {
+  0% {transform:translate(0)}
+  20% {transform:translate(-2px,1px)}
+  40% {transform:translate(3px,-1px)}
+  60% {transform:translate(-1px,2px)}
+  80% {transform:translate(2px,-2px)}
+  100% {transform:translate(0)}
+}
+
+.glitch {
+  animation: glitch 500ms infinite;
+}
+
+/* Tailwind button presets */
+.btn-red{
+  @apply bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg transition shadow;
+}
+.btn-green{
+  @apply bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition shadow;
+}
